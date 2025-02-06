@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #250057;
+}
+.passwordBar{
+    max-width: 500px;  /*space from both sides*/
+    margin: 300px auto; /*total 700 px - 500px so left = right = 100 px margin eith auto*/
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.passwordBar input{
+    width:100%;  /*flex: 1;*/
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    margin-right: 10px;
+    color: #555;
+}
+.passwordBar img{
+    width: 35px;
+    cursor: pointer;
+}

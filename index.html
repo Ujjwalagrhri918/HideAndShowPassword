@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Hider</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="passwordBar">
+            <input type="password" placeholder="Password" id="password">
+            <img src="images/eye-close.png" id ="eyeicon"   >
+        </div>                                          <!---this code is not working in seperate js file-->
+        <script > 
+            let password = document.getElementById("password");
+            let eyeicon = document.getElementById("eyeicon");
+            
+            eyeicon.onclick = function() {
+                if (password.type == "password") {
+                    password.type = "text";
+                    eyeicon.src = "images/eye-open.png";
+                } else {
+                    password.type = "password";
+                    eyeicon.src = "images/eye-close.png";
+                }
+            }
+        </script>
+    </body>
+</html>
